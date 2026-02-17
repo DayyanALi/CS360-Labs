@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- App Color Palette -->
+    <color name="primary">#5C6BC0</color>
+    <color name="primary_dark">#3949AB</color>
+    <color name="secondary">#26A69A</color>
+    <color name="secondary_dark">#00897B</color>
+    <color name="background">#F5F5F5</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="progress_bg">#E0E0E0</color>
+
+    <!-- Emotion Button Colors -->
+    <color name="emotion_happy">#FFB300</color>
+    <color name="emotion_sad">#5C6BC0</color>
+    <color name="emotion_angry">#E53935</color>
+    <color name="emotion_grateful">#43A047</color>
+    <color name="emotion_excited">#FB8C00</color>
+    <color name="emotion_tired">#78909C</color>
+    <color name="emotion_anxious">#8E24AA</color>
+    <color name="emotion_calm">#00ACC1</color>
+    <color name="emotion_loved">#EC407A</color>
+</resources>

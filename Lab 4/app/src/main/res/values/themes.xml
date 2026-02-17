@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme using Material3 with ActionBar for child activities. -->
+    <style name="Base.Theme._26100007EmotiLog" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+    </style>
+
+    <style name="Theme._26100007EmotiLog" parent="Base.Theme._26100007EmotiLog" />
+
+    <!-- Theme for activities that need an ActionBar (Log, Summary screens). -->
+    <style name="Theme._26100007EmotiLog.ActionBar" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+    </style>
+</resources>

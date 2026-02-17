@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <!-- App Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EmotiLog"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How are you feeling right now?"
+            android:textSize="16sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Emotion Buttons Grid (3x3) -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:useDefaultMargins="true"
+            android:alignmentMode="alignBounds">
+
+            <!-- Row 1: Happy, Sad, Angry -->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="😊\nHappy"
+                android:tag="Happy"
+                android:onClick="onEmotionClick"
+                android:textSize="14sp"
+                android:backgroundTint="@color/emotion_happy"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                style="@style/Widget.Material3.Button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="😢\nSad"
+                android:tag="Sad"
+                android:onClick="onEmotionClick"
+                android:textSize="14sp"
+                android:backgroundTint="@color/emotion_sad"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                style="@style/Widget.Material3.Button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="😡\nAngry"
+                android:tag="Angry"
+                android:onClick="onEmotionClick"
+                android:textSize="14sp"
+                android:backgroundTint="@color/emotion_angry"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                style="@style/Widget.Material3.Button" />
+
+            <!-- Row 2: Grateful, Excited, Tired -->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="🙏\nGrateful"
+                android:tag="Grateful"
+                android:onClick="onEmotionClick"
+                android:textSize="14sp"
+                android:backgroundTint="@color/emotion_grateful"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                style="@style/Widget.Material3.Button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="🤩\nExcited"
+                android:tag="Excited"
+                android:onClick="onEmotionClick"
+                android:textSize="14sp"
+                android:backgroundTint="@color/emotion_excited"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                style="@style/Widget.Material3.Button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="😴\nTired"
+                android:tag="Tired"
+                android:onClick="onEmotionClick"
+                android:textSize="14sp"
+                android:backgroundTint="@color/emotion_tired"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                style="@style/Widget.Material3.Button" />
+
+            <!-- Row 3: Anxious, Calm, Loved -->
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="😰\nAnxious"
+                android:tag="Anxious"
+                android:onClick="onEmotionClick"
+                android:textSize="14sp"
+                android:backgroundTint="@color/emotion_anxious"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                style="@style/Widget.Material3.Button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="😌\nCalm"
+                android:tag="Calm"
+                android:onClick="onEmotionClick"
+                android:textSize="14sp"
+                android:backgroundTint="@color/emotion_calm"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                style="@style/Widget.Material3.Button" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:text="🥰\nLoved"
+                android:tag="Loved"
+                android:onClick="onEmotionClick"
+                android:textSize="14sp"
+                android:backgroundTint="@color/emotion_loved"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                style="@style/Widget.Material3.Button" />
+
+        </GridLayout>
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+
+        <!-- Navigation Buttons -->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋  View Emotion Log"
+            android:onClick="openLogs"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/white"
+            android:padding="14dp"
+            style="@style/Widget.Material3.Button" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊  View Daily Summary"
+            android:onClick="openSummary"
+            android:textSize="16sp"
+            android:backgroundTint="@color/secondary"
+            android:textColor="@color/white"
+            android:padding="14dp"
+            style="@style/Widget.Material3.Button" />
+
+    </LinearLayout>
+</ScrollView>
